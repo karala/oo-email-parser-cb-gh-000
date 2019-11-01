@@ -9,7 +9,7 @@ class EmailAddressParser
     @emails = email
   end
 
-  def self.parse()
-    array = email.split(", ")
+  def self.parse
+    emails.split(", ").uniq
   end
 end
